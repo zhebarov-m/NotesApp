@@ -1,0 +1,36 @@
+@import 'null.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+body {
+   background-color: rgb(252, 252, 232);
+   font-family: 'Open Sans';
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   .note-header {
+
+   }
+   .note-add {
+
+   }
+   .note-actions {
+   
+   }
+   .note-edit {
+
+   }
+   .note-delete {
+
+   }
+}
+
+.notes {
+   display: flex;
+}
