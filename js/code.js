@@ -1,11 +1,6 @@
 const notesEl = document.querySelector('.notes');
 const addBtn = document.querySelector('.note__add');
 
-// 1) Написать функцию createNote
-// 2) Добавить кнопку и обработчик на добавление карточки
-// 3) Добавить стили
-// 4) Реализовать редактирование
-
 function createNote(title, text) {
    const noteEl = document.createElement('div');
    noteEl.classList.add('note');
