@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 body {
-  background-color: rgb(252, 252, 232);
+  background-color: rgb(255, 255, 255);
   font-family: "Open Sans";
 }
 
@@ -87,6 +87,82 @@ body {
   display: flex;
   align-items: center;
 }
+.header h1 {
+  font-size: 30px;
+}
+.header .note__add {
+  padding: 0px 4px;
+  margin: 8px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #cacaca;
+}
+.header .note__add:active {
+  background-color: #cacaca;
+}
+
+.hidden {
+  display: none;
+}
+
 .notes {
   display: flex;
+  flex-wrap: wrap;
+}
+.notes .note {
+  background-color: lightyellow;
+  padding: 16px;
+  margin: 8px;
+  border-radius: 10px;
+  height: 280px;
+  width: 240px;
+  box-shadow: 2px 2px 5px 2px #cacaca;
+}
+.notes .note p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: monospace;
+}
+.notes .note p:first-child {
+  font-size: 16px;
+  font-weight: 700;
+}
+.notes .note input {
+  width: 160px;
+  font-weight: 700;
+  font-family: monospace;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: rgba(202, 202, 202, 0);
+}
+.notes .note textarea {
+  font-family: monospace;
+  width: 205px;
+  margin-top: 25px;
+  margin: 0 auto;
+  font-size: 14px;
+  background-color: rgba(202, 202, 202, 0);
+}
+.notes .note .note__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(151, 151, 151);
+}
+.notes .note .note__actions .note__edit {
+  border: 1px solid #dfdfdf;
+  padding: 1px 3px;
+  border-radius: 10px;
+}
+.notes .note .note__actions .note__edit:active {
+  background-color: #cacaca;
+}
+.notes .note .note__actions .note__delete {
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+  padding: 1px 4px;
+}
+.notes .note .note__actions .note__delete:active {
+  background-color: #cacaca;
 }

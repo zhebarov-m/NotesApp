@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
 body {
-   background-color: rgb(252, 252, 232);
+   background-color: rgb(255, 255, 255);
    font-family: 'Open Sans';
 }
 
@@ -14,23 +14,89 @@ body {
 .header {
    display: flex;
    align-items: center;
-   .note-header {
+   h1 {
+      font-size: 30px;
+   }
+   .note__add {
+      padding: 0px 4px;
+      margin: 8px;
+      font-size: 16px;
+      border-radius: 20px;
+      border: 1px solid #cacaca;
 
+      &:active {
+         background-color: #cacaca;
+      }
    }
-   .note-add {
+}
 
-   }
-   .note-actions {
-   
-   }
-   .note-edit {
-
-   }
-   .note-delete {
-
-   }
+.hidden {
+   display: none;
 }
 
 .notes {
    display: flex;
+   flex-wrap: wrap;
+   .note {
+      background-color: lightyellow;
+      padding: 16px;
+      margin: 8px;
+      border-radius: 10px;
+      height: 280px;
+      width: 240px;
+      box-shadow: 2px 2px 5px 2px #cacaca;
+      p {
+         padding-top: 10px;
+         padding-bottom: 10px;
+         font-family: monospace;
+
+         &:first-child {
+            font-size: 16px;
+            font-weight: 700;
+         }
+      }
+      input {
+         width: 160px;
+         font-weight: 700;
+         font-family: monospace;
+         margin-top: 12px;
+         margin-bottom: 10px;
+         font-size: 16px;
+         background-color: #cacaca00;
+      }
+      textarea {
+         font-family: monospace;
+         width: 205px;
+         margin-top: 25px;
+         margin: 0 auto;
+         font-size: 14px;
+         background-color: #cacaca00;
+      }
+      .note__header {
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 10px;
+         border-bottom: 1px solid rgb(151, 151, 151);
+      }
+      .note__actions {
+         .note__edit {
+            border: 1px solid #dfdfdf;
+            padding: 1px 3px;
+            border-radius: 10px;
+
+            &:active {
+               background-color: #cacaca;
+            }
+         }
+         .note__delete {
+            border: 1px solid #dfdfdf;
+            border-radius: 10px;
+            padding: 1px 4px;
+
+            &:active {
+               background-color: #cacaca;
+            }
+         }
+      }
+   }
 }
